@@ -1,0 +1,21 @@
+center>
+    <h1>LOGIN</h1><br><br>
+    <input class="input" type="text" id="name" placeholder="You Name" value="" /><br><br>
+    <input class="input" type="number" id="phoneNo" placeholder="Phone Number" value="" /><br><br>
+    
+    <div>
+    <input class="input" type="password" id="password" placeholder="Password" value="" />
+  
+   <button class="ank" id="anki" onclick="pasee()">see</button><br>
+</div>
+
+    </center>
+    <br><br>
+    <button class="sub" id="sub" onclick="submit()">Submit</button>
+    
+    <center>
+    <p id="thnx"></p></center>
+  
+  
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
