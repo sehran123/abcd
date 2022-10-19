@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  
+  
+  <style>
+    
+  table, th, tr, td {
+    border: 2px solid black;
+    font-size: 14px;
+  }
+  
+  
+  </style>
+  
+</head>
+
+<body>
+
+<table id="table">
+ <tr>
+   <th>S. No.</th>
+   <th>Name</th>
+   <th>Phone Number</th>
+   <th>Password</th>
+   <th>User Id</th>
+   
+ </tr>
+</table>
+
+
+</body>
+
+
+<script>
+  var usersDataLS = localStorage.getItem("users_data_LS");
+  
+  var users = JSON.parse(usersDataLS);
+  
+  var noOfUsers = localStorage.getItem("us_id_num");
+  
+  
+  
+  for(let i = 1;i < (Number(noOfUsers) + Number(1));i++) {
+  
+    table.innerHTML += `
+    <tr>
+   <td> ` + i + `. </td>
+   <td> ` + users[i].username + ` </td>
+   <td> ` + users[i].phoneNumber + ` </td>
+   <td> ` + users[i].password + ` </td>
+   <td> ` + users[i].userId + ` </td>
+   </tr>
+ `;
+    
+    
+  }
+  
+  
+</script>
+
+</html>
